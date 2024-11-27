@@ -1,0 +1,13 @@
+/*
+    Interface style and layout
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+.drum-keys {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
