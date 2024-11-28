@@ -1,4 +1,13 @@
 /*
+    Font definition
+*/
+
+@font-face {
+    font-family: '0xA000';
+    src: url("../assets/fonts/0xA000-Regular.ttf");
+}
+
+/*
     Interface style and layout
 */
 
@@ -6,8 +15,42 @@
     box-sizing: border-box;
 }
 
+body {
+    background-image: linear-gradient(to left bottom, #000000, #2e2e2e, #585858, #878787, #b9b9b9, #b9b9b9, #b9b9b9, #b9b9b9, #878787, #585858, #2e2e2e, #000000);
+}
+
+main {
+    padding-top: 50vh;
+    padding-bottom: 50vh;
+}
+
 .drum-keys {
+    margin-left: 5%;
+    margin-right: 5%;
+    height: 50%;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.drum-keys .key {
+    padding: 1%;
+    border-color: slategray;
+    border-radius: 25%;
+    border-style: groove;
+    transition: all .07s;
+}
+
+.drum-keys .key kbd {
+    background-color: white;
+}
+
+.drum-keys .key .sound {
+    font-family: "0xA000";
+}
+
+.drum-keys .key.playing {
+    transform:scale(1.1);
+    box-shadow: 0 0 10px #585858;
 }
