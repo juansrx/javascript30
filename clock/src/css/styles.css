@@ -1,0 +1,24 @@
+main {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+.clock-body {
+    width: min(50vh, 50vw);
+    height: min(50vh, 50vw);
+    margin-left: 0%;
+    margin-right: 0%;
+    border-radius: 5%;
+    background-color: lightseagreen;
+}
+
+.clock-body .clock-face {
+    position:relative;
+    width: 90%;
+    height: 90%;
+    margin: auto;
+    background-color: azure;
+    border-radius: 50%;
+}
