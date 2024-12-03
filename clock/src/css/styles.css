@@ -22,3 +22,26 @@ main {
     background-color: azure;
     border-radius: 50%;
 }
+
+.clock-body .clock-face .hand {
+    width: 50%;
+    top: 50%;
+    position: relative;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    transition: all 0.05s;
+    transition-timing-function: ease-in-out;
+    height: 2%;
+}
+
+.clock-body .clock-face .hand-hour {
+    background: black;
+}
+
+.clock-body .clock-face .hand-minute {
+    background: gray;
+}
+
+.clock-body .clock-face .hand-second {
+    background: red;
+}
