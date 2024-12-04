@@ -12,9 +12,25 @@
 
     <body>
         <main>
-            <div id="image-frame">
+            <figure id="image-frame">
                 <img src="./src/assets/images/macaw.jpg" alt="macaw image" />
-                <caption>Image by <a href="https://pixabay.com/users/congerdesign-509903/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=856574">congerdesign</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=856574">Pixabay</a></caption>
+                <figcaption>Image by <a href="https://pixabay.com/users/congerdesign-509903/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=856574">congerdesign</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=856574">Pixabay</a></figcaption>
+            </figure>
+
+            <div id="controls-panel">
+                <form>
+
+                    <div class="field">
+                        <label for="range-spacing">Spacing</label>
+                        <input id="range-spacing" type="range" min="10" max="200" value="10" data-sizing="10px"/>
+                    </div>
+
+                    <div class="field">
+                        <label for="range-spacing">Blur</label>
+                        <input id="range-blur" type="range" min="10" max="200" value="10" data-sizing="10px"/>
+                    </div>
+
+                </form>
             </div>
         </main>
     </body>

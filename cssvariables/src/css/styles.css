@@ -19,3 +19,16 @@ body {
     margin-right: auto;
 }
 
+#controls-panel {
+    width: 80%;
+    height: auto;
+    padding: 2%;
+}
+
+#controls-panel form {
+    display: flex;
+}
+
+#controls-panel form .field {
+    flex: 50%;
+}
