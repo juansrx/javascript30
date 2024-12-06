@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
         <link rel="stylesheet" href="./src/css/styles.css" />
+        <script src="./src/javascript/app.js" defer></script>
 
         <title>CSS Variables</title>
     </head>
@@ -22,12 +23,27 @@
 
                     <div class="field">
                         <label for="range-spacing">Spacing</label>
-                        <input id="range-spacing" type="range" min="10" max="200" value="10" data-sizing="10px"/>
+                        <input id="range-spacing" name="spacing" type="range" min="0" max="200" value="10" data-sizing="px"/>
                     </div>
 
                     <div class="field">
-                        <label for="range-spacing">Blur</label>
-                        <input id="range-blur" type="range" min="10" max="200" value="10" data-sizing="10px"/>
+                        <label for="range-blur">Blur</label>
+                        <input id="range-blur" name="blur" type="range" min="0" max="200" value="10" data-sizing="px"/>
+                    </div>
+
+                    <div class="field">
+                        <label for="color-base">Base Color</label>
+                        <input id="color-base" name="base" type="color" value="#992288" />
+                    </div>
+
+                    <div class="field">
+                        <label for="range-rotation">Rotation</label>
+                        <input id="range-rotation" name="rotation" type="range" min="0" max="270" value="0" data-sizing="deg" />
+                    </div>
+
+                    <div class="field">
+                        <label for="range-scale">Scale</label>
+                        <input id="range-scale" name="scale" type="range" min="0.5" max="3.0" value="1.0" step="0.5" />
                     </div>
 
                 </form>
