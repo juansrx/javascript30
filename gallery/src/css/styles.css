@@ -5,3 +5,42 @@ body {
     font-style: italic;
     margin: 0;
 }
+
+.gallery {
+    overflow: hidden;
+    display: flex;
+}
+
+.gallery .gallery-panel {
+    background-color: black;
+    color:white;
+    text-align: center;
+    align-items: center;
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+}
+
+.gallery .gallery-panel > * {
+    width : 100%;
+}
+
+.gallery .gallery-panel#panel1 {
+    background-image: url(../assets/images/image1.jpg);
+}
+
+.gallery .gallery-panel#panel2 {
+    background-image: url(../assets/images/image2.jpg);
+}
+
+.gallery .gallery-panel#panel3 {
+    background-image: url(../assets/images/image3.jpg);
+}
+
+.gallery .gallery-panel#panel4 {
+    background-image: url(../assets/images/image4.jpg);
+}
+
+.gallery .gallery-panel#panel5 {
+    background-image: url(../assets/images/image5.jpg);
+}
