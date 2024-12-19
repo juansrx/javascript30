@@ -5,8 +5,16 @@ const eventListenerMap = {
         this.classList.toggle('open');
     },
     'transitionend' : function (event) {
-        this.classList.toggle('active-panel');
+        if (event.propertyName.includes('flex'))
+            this.classList.toggle('active-panel');
+    },
+    'mouseover' : function (event) {
+        this.classList.add('over');
+    },
+    'mouseout' : function (event) {
+        this.classList.remove('over');
     }
+
 };
 
 galleryPanels.forEach((galleryPanel) => {

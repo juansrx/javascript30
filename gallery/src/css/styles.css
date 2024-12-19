@@ -33,6 +33,11 @@ body {
     font-weight: bold;
 }
 
+.gallery-panel.over {
+    scale: 110%;
+    filter: brightness(150%);
+}
+
 .gallery .gallery-panel>* {
     width: 100%;
     flex: 1 0 auto;
