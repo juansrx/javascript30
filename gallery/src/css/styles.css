@@ -13,16 +13,49 @@ body {
 
 .gallery .gallery-panel {
     background-color: black;
-    color:white;
+    color: white;
     text-align: center;
     align-items: center;
+    justify-content: center;
     flex: 1;
     background-size: cover;
     background-position: center;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition-duration: 0.5s;
+    display: flex;
+    flex-direction: column;
+    border: 5px double black;
 }
 
-.gallery .gallery-panel > * {
-    width : 100%;
+.gallery-panel.open {
+    flex : 5;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.gallery .gallery-panel>* {
+    width: 100%;
+    flex: 1 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-duration: 0.5s;
+}
+
+.gallery .gallery-panel>*:first-child {
+    transform: translateY(-100%);
+}
+
+.gallery .gallery-panel.active-panel>*:first-child {
+    transform: translateY(0%);
+}
+
+.gallery .gallery-panel>*:last-child {
+    transform: translateY(100%);
+}
+
+.gallery .gallery-panel.active-panel>*:last-child {
+    transform: translateY(0%);
 }
 
 .gallery .gallery-panel#panel1 {
