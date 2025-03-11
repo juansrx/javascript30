@@ -34,9 +34,9 @@ const generateRecipeHTML = (recipe) => {
             ${recipe.cuisine}
         <div/>
         <div class="ingredients">
-            ${recipe.ingredients.map(ingredient =>'<span>' + ingredient + '</span>')}
+            ${recipe.ingredients.map(ingredient =>'<span>' + ingredient + '</span>').join(' ')}
         </div>
-    <li/>`;
+    </li>`;
 };
 
 
@@ -48,7 +48,7 @@ const displayMatchesList = function () {
 
     console.log(matchesHTML);
 
-    document.querySelector('#recipeList').innerHTML = matchesHTML;
+    document.querySelector('#recipeList').innerHTML = matchesHTML.join("\n");
 };
 
 document.querySelector('#queryField').addEventListener('change', displayMatchesList);
