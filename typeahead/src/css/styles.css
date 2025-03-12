@@ -1,0 +1,43 @@
+
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-color: #B7B1F2;
+}
+
+#queryField {
+    width: 70%;
+    height: 30px;
+    font-size: large;
+    background-color: #FDB7EA;
+}
+
+#recipeList {
+    max-width: 80%;
+    max-height: 60vh;
+    overflow-y: scroll;
+    padding: 4%;
+    scrollbar-color: #FDB7EA #EAB5AA;
+
+}
+
+#recipeList .recipeItem {
+    background-color: #FBF3B9;
+    border-radius: 5%;
+    padding: 2%;
+    margin: 2%;
+}
+
+#recipeList .recipeItem .cuisine {
+    font-style: italic;
+}
+
+#recipeList .recipeItem .ingredients {
+    text-align: justify;
+}
+
+#recipeList .recipeItem .highlight {
+    color: #FF77AA;
+}
